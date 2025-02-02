@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://gonzalossj12.github.io/H.M.Construcciones/sitemap.xml
