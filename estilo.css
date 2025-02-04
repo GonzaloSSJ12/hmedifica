@@ -10,7 +10,7 @@
 nav {
     position: relative;
     left: 2cm;  /* Mueve la barra de navegación 2 cm hacia el centro */
-    width: calc(100% - 4cm);  /* Ajustamos el navbar para que ocupe todo el ancho, menos los 2 cm a cada lado */
+    width: calc(100% - 4cm);  /* Ocupa el ancho de la pantalla menos 2 cm a cada lado */
 }
 
 nav ul {
@@ -35,18 +35,18 @@ nav ul li a:hover {
 
 /* Sobreescribir la clase bg-dark para hacerlo transparente */
 .navbar-dark.bg-dark {
-    background-color: transparent !important;  /* Fondo transparente */
-    box-shadow: none !important;  /* Remover cualquier sombra */
-    position: absolute; /* Hacer el navbar flotante sobre la imagen */
-    width: calc(100% - 4cm);  /* Ajustamos el navbar para que ocupe todo el ancho, menos los 2 cm a cada lado */
-    left: 2cm;  /* Aseguramos que se alinee con el logo */
+    background-color: transparent !important;
+    box-shadow: none !important;
+    position: absolute;
+    width: calc(100% - 4cm);
+    left: 2cm;
     z-index: 1;
 }
 
 /* Imagen de fondo de la sección principal */
 .intro-section {
     position: relative;
-    height: 100vh; /* Imagen de fondo ocupa todo el alto de la ventana */
+    height: 100vh;
     background-image: url('Fotos/casa.png');
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-/* Sobrescribir la superposición de la imagen */
+/* Superposición oscura en la imagen */
 .intro-section::before {
     content: "";
     position: absolute;
@@ -65,7 +65,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Opacidad en la imagen */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo del texto en la sección de introducción */
@@ -103,8 +103,6 @@ nav ul li a:hover {
 .gallery img:hover {
     transform: scale(1.05);
 }
-
-/* Ajuste de la galería para que las imágenes ocupen el 100% de su columna */
 .gallery .col {
     display: flex;
     justify-content: center;
@@ -115,7 +113,7 @@ nav ul li a:hover {
     gap: 1rem;
 }
 
-/* Estilo de botones flotantes */
+/* Botones flotantes */
 .whatsapp-float, .email-float {
     position: fixed;
     bottom: 40px;
@@ -129,24 +127,24 @@ nav ul li a:hover {
     bottom: 100px;
 }
 
-/* Asegurarnos que los enlaces de navegación estén en negrita */
+/* Enlaces de navegación en negrita */
 .navbar-nav .nav-item .nav-link {
-    font-weight: bold !important;  /* Usar !important para asegurar que se aplique */
-    color: #fff !important;  /* Asegurar que el color del texto sea blanco */
+    font-weight: bold !important;
+    color: #fff !important;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff !important;
 }
 
-/* Efecto hover para los enlaces */
-.navbar-nav .nav-item .nav-link:hover {
-    color: #007bff !important;  /* Color azul al pasar el mouse */
-}
-/* Estilo específico para las imágenes en el carrusel de servicios */
+/* Carrusel de servicios */
 #serviciosCarrusel .carousel-item img {
-    width: 100%;          /* Hace que la imagen ocupe el 100% de su contenedor */
-    height: 250px;        /* Establece una altura fija para todas las imágenes */
-    object-fit: cover;    /* Asegura que la imagen cubra el área sin distorsionarse */
-    border-radius: 8px;   /* Opcional: agrega bordes redondeados a las imágenes */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-/* Estilo de la sección de proyectos */
+
+/* Sección de proyectos */
 .proyectos-section {
     background: #f8f9fa;
     padding: 60px 0;
@@ -166,17 +164,57 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Modal para mostrar la imagen en grande */
+/* Modal de imagen grande */
 #imagenModal img {
     max-width: 100%;
     height: auto;
 }
-/* Espacio entre los íconos de redes sociales */
+
+/* Espacio entre íconos de redes sociales */
 .social-links a {
-    margin-right: 50px; /* 10px de espacio entre los íconos */
+    margin-right: 50px;
 }
 
-/* Fondo gris claro al pie de página */
+/* Pie de página */
 footer {
-    background-color: #ada8a8; /* Gris claro */
+    background-color: #ada8a8;
+}
+
+/* ====================== */
+/* Media Queries para Móviles */
+/* ====================== */
+@media (max-width: 768px) {
+    /* Reducir el tamaño del logo y centrar sin usar 'cm' */
+    .logo {
+        width: 120px;
+        left: 10px;
+    }
+    /* Ajustar el navbar para pantallas pequeñas */
+    nav {
+        left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .navbar-dark.bg-dark {
+        width: 100%;
+        left: 0;
+    }
+    /* Reducir márgenes en los enlaces de navegación */
+    nav ul li {
+        margin: 0 8px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    /* Ajustes en la sección de introducción */
+    .intro-section h2 {
+        font-size: 32px;
+    }
+    .intro-section p {
+        font-size: 16px;
+    }
+    /* Reducir el espacio en el footer y redes sociales */
+    .social-links a {
+        margin-right: 20px;
+    }
 }
