@@ -1,0 +1,129 @@
+/* =========================== */
+/* Estilos Generales */
+/* =========================== */
+.logo {
+    width: 151px;
+    height: auto;
+    position: relative;
+    left: 2cm;
+}
+
+/* Barra de navegación */
+nav {
+    position: relative;
+    left: 2cm;
+    width: calc(100% - 4cm);
+}
+
+.navbar-dark.bg-dark {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    position: absolute;
+    width: calc(100% - 4cm);
+    left: 2cm;
+    z-index: 1;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold !important;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* =========================== */
+/* Sección Sobre Nosotros */
+/* =========================== */
+.sobre-nosotros-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Fotos/fondo-sobre-nosotros.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 2cm;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.sobre-nosotros-header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sobre-nosotros-content {
+    padding: 60px 2cm;
+    background: #ffffff;
+}
+
+.sobre-nosotros-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* =========================== */
+/* Pie de Página */
+/* =========================== */
+footer {
+    background-color: #f1f1f1;
+}
+
+.footer-logo img {
+    height: 5cm;
+}
+
+.social-links a {
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.social-links i {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: #007bff;
+}
+
+/* =========================== */
+/* Media Queries para Responsividad */
+/* =========================== */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+        left: 10px;
+    }
+
+    nav {
+        left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .navbar-dark.bg-dark {
+        width: 100%;
+        left: 0;
+    }
+
+    .sobre-nosotros-header {
+        padding: 80px 10px;
+    }
+
+    .sobre-nosotros-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .sobre-nosotros-content {
+        padding: 40px 10px;
+    }
+
+    .sobre-nosotros-content p {
+        font-size: 16px;
+    }
+
+    .social-links a {
+        margin-right: 20px;
+    }
+}
