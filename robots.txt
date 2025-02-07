@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://a382179.sitemaphosting7.com/4475812/sitemap_4475812.xml
