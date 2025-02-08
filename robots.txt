@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Allow: /
+
+Sitemap: https://hmedifica.netlify.app/sitemap.xml
+
+# Verificación de Google
+User-agent: Googlebot
+Allow: /google-site-verification: googled6f3d05fb4e6a1e4.html
