@@ -238,3 +238,79 @@ footer {
         margin-right: 20px;
     }
 }
+
+/* =============================== */
+/* Estilos para el Banner de Cookies Minimalista */
+/* =============================== */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .cookie-buttons {
+    margin-top: 10px;
+  }
+  
+  .cookie-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cookie-btn:hover {
+    border-color: #666;
+  }
+  
+  .accept-btn {
+    border-color: #28a745;
+    color: #28a745;
+  }
+  
+  .accept-btn:hover {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .decline-btn {
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+  
+  .decline-btn:hover {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  /* Adaptación para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .cookie-banner {
+      font-size: 13px;
+      padding: 10px;
+    }
+    .cookie-btn {
+      font-size: 13px;
+      padding: 6px 12px;
+    }
+  }
+  
