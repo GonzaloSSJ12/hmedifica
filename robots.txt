@@ -1,3 +1,5 @@
+# Robots.txt para HMEdifica
+
 User-agent: *
 Disallow: /admin/
 Disallow: /wp-login.php
@@ -6,6 +8,7 @@ Allow: /
 
 Sitemap: https://hmedifica.netlify.app/sitemap.xml
 
-# Verificación de Google
+# Permitir a Googlebot acceder a los archivos de verificación
 User-agent: Googlebot
-Allow: /google-site-verification: googled6f3d05fb4e6a1e4.html
+Allow: /google8321b11eb756fd06.html
+Allow: /googled6f3d05fb4e6a1e4.html
