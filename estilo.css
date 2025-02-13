@@ -118,22 +118,22 @@ nav ul li a:hover {
     gap: 1rem;
 }
 
-/* Botones flotantes */
+/* Botones flotantes: Actualizamos z-index y posicionamos el botón de WhatsApp */
 .whatsapp-float, .email-float {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    z-index: 100;
+    z-index: 1000;
 }
 
-/* WhatsApp flotante modificado para incluir texto */
+/* WhatsApp flotante: eliminamos estilos inline de la imagen, se usa la clase en el enlace */
 .whatsapp-float {
     display: flex;
     align-items: center;
     text-decoration: none;  /* Sin subrayado */
-    bottom: 40px;
 }
 
+/* Opcional: Si deseas agregar texto al lado del ícono */
 .whatsapp-text {
     display: inline-block;
     vertical-align: middle;
@@ -254,19 +254,19 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     z-index: 9999;
     font-family: Arial, sans-serif;
-  }
+}
   
-  .cookie-banner p {
+.cookie-banner p {
     margin: 0;
     font-size: 14px;
     line-height: 1.4;
-  }
+}
   
-  .cookie-buttons {
+.cookie-buttons {
     margin-top: 10px;
-  }
+}
   
-  .cookie-btn {
+.cookie-btn {
     padding: 8px 15px;
     margin: 0 5px;
     border: 1px solid #ccc;
@@ -276,34 +276,34 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
+}
   
-  .cookie-btn:hover {
+.cookie-btn:hover {
     border-color: #666;
-  }
+}
   
-  .accept-btn {
+.accept-btn {
     border-color: #28a745;
     color: #28a745;
-  }
+}
   
-  .accept-btn:hover {
+.accept-btn:hover {
     background: #28a745;
     color: #fff;
-  }
+}
   
-  .decline-btn {
+.decline-btn {
     border-color: #dc3545;
     color: #dc3545;
-  }
+}
   
-  .decline-btn:hover {
+.decline-btn:hover {
     background: #dc3545;
     color: #fff;
-  }
+}
   
-  /* Adaptación para dispositivos móviles */
-  @media screen and (max-width: 768px) {
+/* Adaptación para dispositivos móviles */
+@media screen and (max-width: 768px) {
     .cookie-banner {
       font-size: 13px;
       padding: 10px;
@@ -312,5 +312,4 @@ footer {
       font-size: 13px;
       padding: 6px 12px;
     }
-  }
-  
+}
